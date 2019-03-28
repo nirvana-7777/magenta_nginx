@@ -5,4 +5,5 @@ RUN chmod 644 /usr/share/nginx/html/web_magentatv_de.php
 
 RUN sed -i -e 2c'    listen       8077;' /etc/nginx/conf.d/default.conf
 
+CLOSEPORT 80
 EXPOSE 8077
